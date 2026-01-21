@@ -6,7 +6,10 @@ namespace WinFormsApp1
     {
         private List<Class1> classList = new List<Class1> {
                 new Class1 { Id = 2, Name = "Juan Dela Cruz" },
-                new Class1 { Id = 3, Name = "Maria Clara" }
+                new Class1 { Id = 3, Name = "Maria Clara" },
+                new Class1 { Id = 4, Name = "Jose Rizal"},
+                new Class1 { Id = 5, Name = "Andres Bonifacio"},
+                new Class1 { Id = 6, Name = "Emilio Aguinaldo"}
         };
         public Form1()
         {
@@ -18,6 +21,8 @@ namespace WinFormsApp1
         {
             var class1 = new Class1();
             MessageBox.Show(class1.Name);
+            var student = new Student();
+            student.Gender = Gender.Male;
         }
 
         private void loadClassList()
